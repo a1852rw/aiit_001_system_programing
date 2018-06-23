@@ -6,5 +6,10 @@ words = s.split()
 
 n = len(words)
 
-print(n, file=sys.stdout, end='')
+d = {}
+
+for w in words:
+    d[w] = 1
+
+print(d, file=sys.stdout, end='')
 
