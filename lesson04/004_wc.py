@@ -9,8 +9,10 @@ n = len(words)
 d = {}
 
 for w in words:
-    d[w] = 1
+    if w id d:
+        d[w] + = 1
+    else:
+        d[w] = f
 
 print(d, file=sys.stdout, end='')
 
-# この部分は後ほどビデオを見ながら確認すること
