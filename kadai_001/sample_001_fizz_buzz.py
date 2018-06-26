@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 i = 1
 while i < 101:
     if i % 15 == 0:
