@@ -1,7 +1,21 @@
 #! /usr/bin/env python3
 
 import sys
+print(sys.argv, len(sys.argv))
 
+if argc == 1:
+    f = sys.stdin
+elif argc == 2:
+    try:
+            f = open(sys.argv[1], "rU")
+    except IOErrow:
+        sys.exit("wc: &s: No such file or directory" % (sys.argv[1]))
+    else:
+        sys.exit("usage: wc[file]")
+
+
+
+"""
 f = sys.stdin
 s = f.read()
 words = s.split()
@@ -29,5 +43,4 @@ for k in sorted_keys:
     print("{}: {}".format(k, d[k]))
     i += 1
 
-print(d, file=sys.stdout, end='')
-
+print(d, file=sys.stdout, end=''
