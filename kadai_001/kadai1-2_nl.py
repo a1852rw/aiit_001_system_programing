@@ -10,10 +10,10 @@ if len(sys.argv) >= 2:
         for line in lines:
             print i, line,
             i += 1
-except IOError:
+    except IOError:
         print 'Can not open file:', sys.argv[1], '\n'
-else:
-    while(True)
-        data = sys.stdin.readline()
-        print i, data,
-        i += 1
+    else:
+        while(True)
+            data = sys.stdin.readline()
+            print i, data,
+            i += 1
