@@ -10,7 +10,7 @@
 # 比較演算子を使って置き換えることに成功
 
 def fb(i):
-    return (i % 3 == 0)*"fazz" + (i % 5 == 0)* "buzz"
+    return (i % 3 == 0)*"fizz" + (i % 5 == 0)* "buzz"
 
 i = 1
 while i <= 200:
