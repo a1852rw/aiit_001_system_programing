@@ -4,7 +4,7 @@ import sys
 i = 1
 if len(sys.argv) >= 2:
 # len関数は要素数を取得する。sys.argv変数はコマンドライン引数を取得する。len(sys.argv)で引数の数をカウントできる。
-# コマンドライン引数とは、コンピュータのコマンド入力画面(コマンドライン)からプログラムを起動する際に指定するパラメータのこと。プログラムの実行時にオプションや処理対象のデータなどを与えるために利用される
+# コマンドライン引数とは、コンピュータのコマンド入力画面(コマンドライン)からプログラムを起動する際に指定するパラメータのこと。
     try:
         f = open(sys.argv[1])
         lines = f.readlines()
@@ -15,7 +15,7 @@ if len(sys.argv) >= 2:
     except IOError:
         print('Can not open file:', sys.argv[1], '\n')
     else:
-        while(True)
+        while(True):
             data = sys.stdin.readline()
             print(i, data)
             i += 1
