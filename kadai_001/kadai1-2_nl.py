@@ -16,13 +16,11 @@ if len(sys.argv) >= 2:
        # print('Can not open file:', sys.argv[1], '\n')
        # sys.exit()
 	sys.exit("nl: %s: No such file or directory" % (sys.argv[1]))
-
 else:
     while(True):
         data = sys.stdin.readline()
             print(i, data)
         i += 1
-fi
 
 # 要件をここに書いていきます
 # ⽬標: 20-25⾏程度
