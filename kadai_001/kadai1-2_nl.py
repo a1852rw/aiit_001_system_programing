@@ -13,14 +13,16 @@ if len(sys.argv) >= 2:
             print(i, line)
             i = i + 1
     except IOError:
-       # print('Can not open file:', sys.argv[1], '\n')
-       # sys.exit()
 	sys.exit("nl: %s: No such file or directory" % (sys.argv[1]))
 else:
-    while(True):
+    while(i <= len(sys.argv)):
         data = sys.stdin.readline()
             print(i, data)
         i += 1
+
+# ここのWhileの中のコードで引数(この場合は対象ファイルの文字列)がなくなった時点でプログラムが停止するよう設定した。
+# 正直よくわからないが要件を満たした動作をしたのでそれで良しとする。
+
 
 # 要件をここに書いていきます
 # ⽬標: 20-25⾏程度
@@ -28,3 +30,5 @@ else:
 # 要件2：テキストデータは、ファイル名が指定されればファイルから、ファイル名が無ければstdinから読み込む
 # 要件3：ファイル名が不正であればエラー処理をする
 
+# 注：提出時は1行目のシバンを削除した。
+# 手伝ってくれた皆さん本当にありがとうございましt。おかげで無事に終わりました。
