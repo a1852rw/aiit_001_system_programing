@@ -11,6 +11,9 @@ public class sample_001_cal {
 		System.out.println("計算結果を出力");
 		System.out.println(x);
 		
+		System.out.println("繰り返し回数を出力");
+		System.out.println(count);
+		
 	}
 	
 }
