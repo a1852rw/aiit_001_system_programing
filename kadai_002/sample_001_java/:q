@@ -1,7 +1,7 @@
 public class sample_002_cal {
 	public static void main (String[] args){
-		long x = 1;
-		long count = 1;		
+		int x = 1;
+		int count = 1;		
 		
 		while(x < 1000000000) {
 			x = x + 1;
@@ -18,5 +18,3 @@ public class sample_002_cal {
 	
 }
 
-//Pythonで書いたコードをJAVAに書き換えた
-//整数型がintだったのに気づきlong型に変更した
