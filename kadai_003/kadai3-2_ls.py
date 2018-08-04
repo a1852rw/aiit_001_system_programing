@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
+
 import os
 import sys
 
-f = os.listdir(".")
+path =  
+f = os.listdir(path)
 
 print(f)
 
