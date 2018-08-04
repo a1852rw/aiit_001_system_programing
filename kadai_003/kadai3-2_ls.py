@@ -1,7 +1,7 @@
 import os
 import sys
 
-f = os.listdir(path)
+f = os.listdir(".")
 
 print(f)
 
@@ -12,6 +12,5 @@ print(f)
 # 要件3:-l，-a，-i程度のオプションは実装してください。
 # 要件4:os.system()でのlsコマンドの起動以外の実装をしてください。
 
-# とりあえず要件を書き出したものの・・・この後どうしましょう(´;ω;｀)
 
 
