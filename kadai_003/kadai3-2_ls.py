@@ -1,3 +1,10 @@
+import os
+import sys
+
+f = os.listdir(path)
+
+print(f)
+
 
 # お題： Unixのlsコマンドの基本機能相当のls.pyを書いてください。
 # 要件1：コマンドライン引数で対象パス名を指定できるようにしてください。
