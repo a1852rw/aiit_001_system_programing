@@ -5,6 +5,7 @@ import stat
 import pwd
 import grp
 import datetime
+import os
 
 def ls(path, options=''):
     file_list = []
