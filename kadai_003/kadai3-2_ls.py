@@ -94,7 +94,7 @@ def arg_parse(args, argc):
     elif argc == 1:
 # 引数が1つでハイフンから始まる場合の動作を規定する
         check_hyphen = args[0]
-        if check_hyphen[0] == '-'
+        if check_hyphen[0] == '-':
             for op in check_hyphen[1:]:
                 op_list.append(op)
 
