@@ -2,16 +2,30 @@
 # -*- coding: utf-8 -*-
 
 import feedparser
+import requests
+import json
+
 
 # feedparserはサードパーティーのモジュール pip install feedparesrなどの処理が必要???
 
 d = feedparser.parse("http://rss.weather.yahoo.co.jp/rss/days/4410.xml")
 
-print("feed:", d.channel.title)
-print("description:", d.channel.description)
+post = "description:", d.channel.description
 
-for e in d.entries:
-	print("{}: {}".format(e.title, e.link))
+# print("feed:", d.channel.title)
+# print("description:", d.channel.description)
+ 
+#for e in d.entries:
+#	print("{}: {}".format(e.title, e.link))
+
+SLACK_POST_URL = https://hooks.slack.com/services/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
+
+post_json = {
+	 "text": post
+}
+requests.post(SLACK_POST_URL, data = json.dumps(post_json))
+
+
 
 
 # お題: 複数のAPI（OpenAPI等）を活⽤し、プログラムを作成せよ
