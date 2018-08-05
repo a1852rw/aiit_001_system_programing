@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -mport os
+#!/usr/bin/env pyhton3
+# -*- coding: utf-8 -*-
 
 import sys
 import stat
