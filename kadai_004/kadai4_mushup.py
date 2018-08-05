@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import urllib.request
+import feedparser
 
-from xml.etree.ElementTree import ElementTree
-	f = urllib.request.urlopen("http://zip.cgis.biz/xml/zip.php?zn=1500001")
-	et = ElementTree(f)
-for e in et.getroot():
+# feedparserはサードパーティーのモジュール pip install feedparesrなどの処理が必要???
 
-print(e)
+d = feedparser.parse("http://rss.weather.yahoo.co.jp/rss/days/4410.xml")
+
+print("feed:", d.channel.title)
+print("description:", d.channel.description)
+
+for e in d.entries:
+	print("{}: {}".format(e.title, e.link))
+
 
 # お題: 複数のAPI（OpenAPI等）を活⽤し、プログラムを作成せよ
 
