@@ -121,15 +121,6 @@ argc = len(argvs)      # 引数の個数を取得する
 arg_parse(argvs, argc)
 
 
-# import os
-# import sys
-
-# path =  
-# f = os.listdir(path)
-
-# print(f)
-
-
 # お題： Unixのlsコマンドの基本機能相当のls.pyを書いてください。
 # 要件1：コマンドライン引数で対象パス名を指定できるようにしてください。
 # 要件2:対象パス名が省略されたときはカレントのディレクトリを対象パス名にしてください。
