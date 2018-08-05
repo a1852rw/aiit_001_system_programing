@@ -24,4 +24,9 @@ for e in d.entries:
 
 # 備考：上記の要件以外に、レポートの形式が適切であることも要求される
 
+# 補足
+# このプログラムを実行するには、下記コマンドで必要なパッケージをインストールする必要がある(ubuntuの場合)
+# apt-get install python3-pip python3-dev
+# pip install feedparser
+
 
