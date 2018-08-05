@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import urllib.request
+
+from xml.etree.ElementTree import ElementTree
+	f = urllib.request.urlopen("http://zip.cgis.biz/xml/zip.php?zn=1500001")
+	et = ElementTree(f)
+for e in et.getroot():
+
+print(e)
+
 # お題: 複数のAPI（OpenAPI等）を活⽤し、プログラムを作成せよ
 
 # 要件リスト
@@ -8,4 +20,4 @@
 
 # 備考：上記の要件以外に、レポートの形式が適切であることも要求される
 
-# とりあえず要件を書き出してみた。まずはAPIを調べるところから・・・先は長そうです(´;ω;｀)
+
