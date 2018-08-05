@@ -18,12 +18,12 @@ for e in d.entries:
 	print("{}: {}".format(e.title, e.link))
 	post = "{}: {}".format(e.title, e.link)
 
-SLACK_POST_URL = "https://hooks.slack.com/services/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"
+	SLACK_POST_URL = "https://hooks.slack.com/services/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"
 
-post_json = {
-	 "text": post
-}
-requests.post(SLACK_POST_URL, data = json.dumps(post_json))
+	post_json = {
+	 	"text": post
+	}
+	requests.post(SLACK_POST_URL, data = json.dumps(post_json))
 
 
 
