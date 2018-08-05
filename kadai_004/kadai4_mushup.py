@@ -18,7 +18,7 @@ post = "description:", d.channel.description
 #for e in d.entries:
 #	print("{}: {}".format(e.title, e.link))
 
-SLACK_POST_URL = https://hooks.slack.com/services/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
+SLACK_POST_URL = "https://hooks.slack.com/services/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"
 
 post_json = {
 	 "text": post
