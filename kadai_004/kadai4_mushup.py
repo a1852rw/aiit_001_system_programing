@@ -5,11 +5,7 @@ import feedparser
 import requests
 import json
 
-
-# feedparserはサードパーティーのモジュール pip install feedparesrなどの処理が必要???
-
 d = feedparser.parse("http://rss.weather.yahoo.co.jp/rss/days/4410.xml")
-
 
 print("feed:", d.channel.title)
 print("description:", d.channel.description)
