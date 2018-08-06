@@ -10,6 +10,7 @@ d = feedparser.parse("http://aiit-isa.hatenablog.com/feed")
 print("feed:", d.channel.title)
 print("description:", d.channel.description)
  
+e = 1
 #for e in d.entries:
 	print("{}: {}".format(e.title, e.link))
 	print("{}".format(e.description))
