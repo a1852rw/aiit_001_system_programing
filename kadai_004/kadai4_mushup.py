@@ -5,7 +5,7 @@ import feedparser
 import requests
 import json
 
-d = feedparser.parse("http://rss.weather.yahoo.co.jp/rss/days/4410.xml")
+d = feedparser.parse("https://jp.linux.com/index.php?option=com_ninjarsssyndicator&feed_id=1&format=raw")
 
 print("feed:", d.channel.title)
 print("description:", d.channel.description)
@@ -14,7 +14,7 @@ for e in d.entries:
 	print("{}: {}".format(e.title, e.link))
 	post = "{}: {}".format(e.title, e.link)
 
-	SLACK_POST_URL = "https://hooks.slack.com/services/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"
+#	SLACK_POST_URL = "https://hooks.slack.com/services/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"
 
 	post_json = {
 	 	"text": post
