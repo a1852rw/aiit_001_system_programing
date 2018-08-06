@@ -5,7 +5,7 @@ import feedparser
 import requests
 import json
 
-d = feedparser.parse("https://jp.linux.com/index.php?option=com_ninjarsssyndicator&feed_id=1&format=raw")
+d = feedparser.parse("https://www.inoreader.com/feed/http%3A%2F%2Faiit-isa.hatenablog.com%2Ffeed")
 
 print("feed:", d.channel.title)
 #print("description:", d.channel.description)
