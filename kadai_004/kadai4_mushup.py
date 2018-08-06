@@ -8,10 +8,11 @@ import json
 d = feedparser.parse("https://jp.linux.com/index.php?option=com_ninjarsssyndicator&feed_id=1&format=raw")
 
 print("feed:", d.channel.title)
-print("description:", d.channel.description)
+#print("description:", d.channel.description)
  
 for e in d.entries:
 	print("{}: {}".format(e.title, e.link))
+	peint("{}".format(e.description))
 	post = "{}: {}".format(e.title, e.link)
 
 	SLACK_POST_URL = "https://hooks.slack.com/services/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"
