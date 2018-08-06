@@ -12,9 +12,7 @@ print("description:", d.channel.description)
 
 for e in d.entries:
 	print("{}: {}".format(e.title, e.link))
-	print("{}".format(e.description))
 	post = "{}: {}".format(e.title, e.link)
-	post = "{}".format(e.description)
 
 	SLACK_POST_URL = "https://hooks.slack.com/services/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"
 
