@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-dict = {"alice": 3, "Bob": 5, "Dave": 4, "Victor": 10}
+dict = {"alice":3, "Bob":5, "Dave":4, "Victor":10}
 
 sorted_dict = sorted(dict.items(), 「空欄(a)」)
 
