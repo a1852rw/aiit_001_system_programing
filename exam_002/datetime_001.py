@@ -5,7 +5,7 @@ from datetime import datetime
 
 t1 = datetime.now()
 
-print = t
+print(t1)
 
 # 要件1：CGIスクリプトをPythonで書く
 # 要件2：朝は「Good morning」など、現在の時間に従って挨拶を出力する
