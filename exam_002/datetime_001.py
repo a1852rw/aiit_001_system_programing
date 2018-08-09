@@ -3,10 +3,13 @@
 
 from datetime import datetime
 
+print('Content-type: text/html; charset=UTF-8\r\n')
+
 t1 = datetime.now().strftime('%H')
 t2 = int(t1)
 
-print(t2)
+# print(t2)
+# 動作確認用 不要なのでコメントアウトした
 
 if 4 < t2 < 9:
 	s1 = "おはようございます"
@@ -19,7 +22,8 @@ elif 23 <= t2 <= 24:
 elif 0 <= t2 <= 4:
 	s1 = "早く寝てください"
 
-print(s1)
+# print(s1)
+# 動作確認用 不要なのでコメントアウトした
 
 # 要件1：CGIスクリプトをPythonで書く
 # 要件2：朝は「Good morning」など、現在の時間に従って挨拶を出力する
