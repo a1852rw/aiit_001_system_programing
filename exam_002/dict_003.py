@@ -3,7 +3,7 @@
 
 dict = {"alice":3, "Bob":5, "Dave":4, "Victor":10}
 
-sorted_dict = sorted(dict.items(), key=lambda x:len[0])
+sorted_dict = sorted(dict.items(), key=lambda x:x(len[0]))
 
 # print(len(dict.items()))
 
