@@ -1,20 +1,15 @@
 #!/usr/bin/python3
 
 count = 4
-
-s = "Number of goals:" + count
-
+s = "Number of goals:" + str(count)
 print(s)
-
-s = 
 
 count = 9
-
+s = "Number of goals:" + str(count)
 print(s)
 
-
 count = 11 
-
+s = "Number of goals:" + str(count)
 print(s)
 
 # 要件1：ゴールの数（count）を渡すと、"Number of goals:<count>"（<count>は受け取った値）と出力する変数sを書け。
