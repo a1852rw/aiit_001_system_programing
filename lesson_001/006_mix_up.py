@@ -3,7 +3,6 @@
 
 def mix_up(a, b):
 	ret = b[:2] + a[2:] +  " " + a[:2] + b[2:]
-#	ret = a[:3] + " " + b[-3:]
 	return ret
 
 print(mix_up("mix", "pop"))
