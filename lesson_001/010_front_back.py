@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 def front_back(a, b):
-	a1 = len(a)
+	a1 = int(len(a))
 	b1 = len(b)
 	a2 = len(a) / 2
 	b2 = len(b) / 2
 	
-	return(a[a1])
+	return a[:a2] + b[:b2] + a[-a2:] + b[-b2:]
 
 #	if a1 % 2 == 0 and b1 % 2 == 0:
 #		return a[: a2] + b[: b2] + a[-a2 :] + b[-b2 :]
