@@ -6,10 +6,23 @@ def front_back(a, b):
 	b1 = len(b)
 	a2 = int(len(a) / 2)
 	b2 = int(len(b) / 2)
-# ここでintで型変換を行わないと文字列の取得でエラーが発生する
+	# ここでintで型変換を行わないと文字列の取得でエラーが発生する
 
-	if(a1 % 2 == 0 and b1 % 2 == 0):
-		return a[:a2] + b[:b2]
+	if a1 % 2 == 0 and b1 % 2 == 0:
+		return a[:a2] + b[:b2] + a[-a2:] + b[-b2:]
+	# aとbが偶数の場合
+	
+	elif a1 % 2 == 0 and b1 % 2 != 0:
+		return a[:a2] + b[:b2+1] + a[-a2:] + b[-b2:]
+	# aが偶数でbが奇数の場合	
+
+	elif a1 % 2 != 0 and b1 % 2 == 0:
+		return a[:a2+1] + b[b2] + a[-a2:] + b[-b2:]
+	# aが奇数でbが偶数の場合
+
+	elif a1 % 2 != 0 and b1 % 2 != 0:
+		return a[:a2+1] + b[:b2+1] + a[-a2:] + b[-b2:]
+	# aとbが奇数の場合
 
 print(front_back('abcd', 'xy'))
 print(front_back('abcde', 'xyz'))
