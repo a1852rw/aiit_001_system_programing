@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 def front_back(a, b):
-#	a1 = len(a)
-#	b1 = len(b)
-#	a2 = len(a) / 2
-#	b2 = len(b) / 2
+	a1 = len(a)
+	b1 = len(b)
+	a2 = int(len(a) / 2)
+	b2 = int(len(b) / 2)
+# ここでintで型変換を行わないと文字列の取得でエラーが発生する
 
-	if(len(a) % 2 == 0 and len(b) % 2 == 0):
-#		return a[:a2] 
-		return a[:len(a)/2]
+	if(a1 % 2 == 0 and b1 % 2 == 0):
+		return a[:a2] + b[:b2]
 
 print(front_back('abcd', 'xy'))
 print(front_back('abcde', 'xyz'))
