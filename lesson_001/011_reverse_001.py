@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 orig = "hello"
-# ここに何か書く
+result = str(orig[::-1])
+# origに格納されている文字列の最後から1文字ずつさかのぼって要素(文字)を取り出す
 
 print(result)
 
