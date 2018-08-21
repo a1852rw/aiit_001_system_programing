@@ -2,7 +2,14 @@
 # -*- coding: utf-8 -*-
 
 def fb(n):
-# ここに何かコードを書く
+	if n % 15 == 0 : 
+		return "FizzBuzz"
+	elif n % 3 == 0:
+		return "Fizz"
+	elif n % 5 == 0:
+		return "Buzz"
+	else:
+		return ""
 
 i = 1
 while i <= 20:
