@@ -2,8 +2,12 @@
 # -*- coding; utf-8 -*-
 
 def not_bad(s):
-# ここに要件を満たす処理を記述する
-
+	n = "not"
+	b = "bad"
+	g = "good"
+	
+	if s.find(n) != -1 and s.find(b) != -1 and s.find(n) < s.find(b):
+		return s.find(n) + " :" +  s.rfind(b)
 
 print(not_bad('This movie is not so bad'))
 print(not_bad('This dinner is not that bad!'))
