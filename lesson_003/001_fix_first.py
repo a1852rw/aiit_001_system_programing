@@ -3,7 +3,8 @@
 
 def fix_first(s):
 	s1 = s[:1]
-	return s.replace(s1,"*")
+	s2 = s[1:]
+	return s1 + s2.replace(s1, "*")
 
 print(fix_first("babble"))
 print(fix_first("google"))
