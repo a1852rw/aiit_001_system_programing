@@ -8,6 +8,8 @@ def not_bad(s):
 	
 	if s.find(n) != -1 and s.find(b) != -1 and s.find(n) < s.find(b):
 		return s[:s.find(n)] + "good" + s[s.rfind(b)+3:]
+	else:
+		return s
 
 print(not_bad('This movie is not so bad'))
 print(not_bad('This dinner is not that bad!'))
