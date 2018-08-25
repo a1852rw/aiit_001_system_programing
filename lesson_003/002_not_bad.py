@@ -7,7 +7,7 @@ def not_bad(s):
 	g = "good"
 	
 	if s.find(n) != -1 and s.find(b) != -1 and s.find(n) < s.find(b):
-		return s[:s.find(n)] + " :" + s[s.rfind(b):]
+		return s[:s.find(n)] + "good" + s[s.rfind(b)+3:]
 
 print(not_bad('This movie is not so bad'))
 print(not_bad('This dinner is not that bad!'))
