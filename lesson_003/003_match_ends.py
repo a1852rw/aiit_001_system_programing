@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
-# -*- coding: uft-8 -*-
+# -*- coding: utf-8 -*-
 
+"""
 def match_ends(li):
-# ここに要件を満たす処理を記述する
+	for s1 in li:
+		return len(s1)
 
 print(match_ends(['aba', 'xyz', 'aa', 'x', 'bbb']))
 print(match_ends(['', 'x', 'xy', 'xyx', 'xx']))
 print(match_ends(['aaa', 'be', 'abc', 'hello']))
+"""
+
+li = ["aba","xyz","aa","bbb"]
+
+for s1 in li:
+	print(len(s1))
+
 
 
 # 要件1：関数match_endsを書く
