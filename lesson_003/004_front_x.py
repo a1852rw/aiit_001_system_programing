@@ -2,7 +2,13 @@
 # -*- coding; utf-8 -*-
 
 def front_x(x):
-# ここに指定された処理を記述する
+	for s1 in x:
+#		if s1[:1] == "x":
+#			return s1
+#		else:
+#			return s1
+		return s1
+
 
 print(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']))
 print(front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']))
