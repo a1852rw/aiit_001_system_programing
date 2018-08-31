@@ -18,6 +18,19 @@ print(front_x(['ccc', 'bbb', 'aaa', 'xcc', 'xaa']))
 print(front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark']))
 
 
+# def front_x(x):
+#    l1, l2 = [], []
+#    for e in x:
+#        if e.startswith('x'):
+#            l1.append(e)
+#        else:
+#            l2.append(e)
+#    return sorted(l1) + sorted(l2)
+
+
+
+
+
 # 要件1：front_x関数を記述する
 # 要件2：この関数は受け取った文字列のリストの要素を分類する「x」で始まる文字列と「x以外」で始まる文字列に分類する
 # 要件3：分類した文字列を整列(ソート)したリストを返却する
