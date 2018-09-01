@@ -2,11 +2,17 @@
 # -*- coding; utf-8 -*-
 
 def sort_last(x):
-# ここに対応する処理を入力する
+	for li in x:
+		return sorted(x, key=alpha)
+#		下の行で定義する関数「alpha」の返却値で整列したリストを返却する。
 
-print(sort_last([[1,	3],	[3,	2],	[2,	1]]))	
-print(sort_last([[2,	3],	[1,	2],	[3,	1]]))	
-print(sort_last([[1,	7],	[1,	3],	[3,	4,	5],	[2,	2]]))	
+def alpha(s):
+	return s[-1:]
+#	取得した要素(今回はリスト形式)の最後一文字を抽出して返却する
+
+print(sort_last([[1,3],	[3,2],[2,1]]))	
+print(sort_last([[2,3],	[1,2],[3,1]]))	
+print(sort_last([[1,7],	[1,3],[3,4,5],[2,2]]))	
 
 # 要件1：関数sort_lastを記述する
 # 要件2：リストを受け取り、リストの最後の要素の値で昇順(小さい順)に整列したリストを返却する
