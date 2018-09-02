@@ -2,8 +2,12 @@
 # -*- coding; utf-8 -*-
 
 def remove_adjacent(li):
-    # ここに対応する処理を記述する
-    
+	si = li[:]
+	for i, s in emumerate(si):
+		if s == si[i-1]:
+			li.remove(s)
+	return si
+			
 print(remove_adjacent([1,2,2,3]))	
 print(remove_adjacent([2,2,3,3,3]))	
 print(remove_adjacent([]))
