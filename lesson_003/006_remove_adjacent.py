@@ -2,11 +2,15 @@
 # -*- coding; utf-8 -*-
 
 def remove_adjacent(li):
-	si = li[:]
-	for i, s in emumerate(si):
-		if s == si[i-1]:
-			li.remove(s)
-	return si
+	if len(li) != 0:
+		n1  = []
+		n1.append(li[0])
+		for i in range(1, len(li)):
+			if li[i] != li[i - 1]:
+				n1.append(li[i])
+			return n1
+	else:
+		return li
 			
 print(remove_adjacent([1,2,2,3]))	
 print(remove_adjacent([2,2,3,3,3]))	
