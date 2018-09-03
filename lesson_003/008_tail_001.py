@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding; utf-8 -*-
 
-f = open('small.txt','rU')	
-#ここに何がしかのコードを入力する
-      
-f.close()
+f = open('small.txt','rU')
 
+f1 = list(f)
+# fをリスト型の変数「f1」に変更する
+
+for line in reversed(f1):
+# 関数「reverse」を使いリスト内の要素を逆方向から読み込む
+	print(line, end='')
+# 半角スペースごとに区切って(別の要素と認識されるようにして)出力する
+f.close()
 
 # 要件1：ファイル「small.txt」を読み込む
 # 要件2：読み込んだファイルを後ろの⾏から表⽰する
