@@ -2,8 +2,12 @@
 # -*- coding; utf-8 -*-
 
 def linear_merge(li1,li2):
-    # 処理の内容を記述する
-    
+	li3 = li1 + li2
+#	変数「li3」にリスト「li1」と「li2」を結合したリストを代入する(「+」で結合できる)
+	
+	return sorted(li3)
+#	リスト「li3」の要素を整列させて返却する    
+
 print(linear_merge(['aa','xx','zz'],['bb','cc']))	
 print(linear_merge(['aa','xx'],['bb','cc','zz']))	
 print(linear_merge(['aa','aa'],['aa','bb','bb']))
