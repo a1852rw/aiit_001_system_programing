@@ -5,7 +5,8 @@ f = open('small.txt','rU')
 pat = "but"	
 
 f1 = list(f)
-f2 = [s for s in f1 if pat in s]
+f2 = [s for s in f1 if "But" in s]
+
 print(f2)
 	
 f.close()
