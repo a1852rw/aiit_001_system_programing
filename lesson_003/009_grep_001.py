@@ -4,10 +4,13 @@
 f = open('small.txt','rU')	
 pat = "but"	
 
-f1 = list(f)
-f2 = [s for s in f1 if "But" in s]
+import re
 
-print(f2)
+f1 = list(f)
+f2 = re.compile(pat, re.IGNORECASE)
+f3 = [s for s in f1 if f2 in s]
+
+print(f3)
 	
 f.close()
 
