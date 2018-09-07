@@ -9,10 +9,8 @@ import re
 f1 = list(f)
 f2 = re.compile(pat, re.IGNORECASE)
 
-# f3 = [s for s in f1 if f2 in s]
-
 for f3 in f1:
-	if f2 in f3:
+	if re.search(f2, f3) != None:
 		print(f3)
 	
 f.close()
