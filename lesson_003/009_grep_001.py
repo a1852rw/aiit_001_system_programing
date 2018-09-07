@@ -12,7 +12,11 @@ f2 = re.compile(pat, re.IGNORECASE)
 for f3 in f1:
 	if re.search(f2, f3) != None:
 		print(f3)
-	
+		
+		m1 = re.match(f2,f3)
+		f4 = re.sub(f2, "***" + str(f3[m1.start():m1.end()]) + "***", f3)
+		print(f4)	
+
 f.close()
 
 # 要件1：ファイルを読み込み指定された文字列が存在する行だけを出力する
